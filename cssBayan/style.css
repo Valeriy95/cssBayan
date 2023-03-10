@@ -1,0 +1,48 @@
+.wrapper {
+   margin: auto;
+   width: 90%;
+}
+
+.container {
+   margin: auto;
+   width: 70%;
+}
+
+.container img {
+   width: 15em;
+   height: 15em;
+}
+
+.title {
+   display: flex;
+   justify-content: space-between;
+   border-top: 0.1em solid #000;
+}
+
+.icon {
+   background-image: url(img/icons8-сложение-50.png);
+   width: 3em;
+   height: 3em;
+   transition: 0.3s;
+}
+
+.input {
+   appearance: none;
+}
+
+.images {
+   text-align:center;
+   display: none;
+   transition: 0.3s;
+}
+
+.input:checked + .label > .images { 
+   display: block;
+   transition: 0.3s;
+}
+
+.input:checked + .label > .title > .icon { 
+   transform: rotate(45deg);
+   transition: 0.3s;
+}
+
