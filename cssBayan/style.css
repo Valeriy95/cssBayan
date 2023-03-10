@@ -31,7 +31,7 @@ body {
    background-image: url(img/icons8-сложение-50.png);
    width: 3em;
    height: 3em;
-   transition: 0.3s;
+   transition: 0.5s;
 }
 
 .input {
@@ -39,35 +39,74 @@ body {
 }
 
 .images {
-   text-align:center;
-   display: none;
-   transition: 0.3s;
+   margin: auto;
+   scale: 0;
+   width: 0em;
+   height: 0em;
+   transition: 0.5s;
 }
 
 .input:checked + .label > .images { 
-   display: block;
-   transition: 0.3s;
+   scale: 1;
+   margin: auto;
+   width: 15em;
+   height: 15em;
+   transition: 0.5s;
 }
 
 .input:checked + .label > .title > .icon { 
    transform: rotate(45deg);
-   transition: 0.3s;
+   transition: 0.5s;
 }
 
 .input:checked + .label > .title > p { 
    color: black;
-   transition: 0.3s;
+   transition: 0.5s;
 }
 
 .container:hover > label > .title > p {
    color: black;
    cursor: pointer;
-   transition: 0.3s;
+   transition: 0.5s;
 }
 
 .container:hover > label > .title > .icon {
    display: block;
    cursor: pointer;
-   transition: 0.3s;
+   transition: 0.5s;
 }
 
+label:hover {
+   cursor: pointer;
+}
+
+label:hover > .title > .icon {
+   transform: rotate(45deg);
+   transition: 0.5s;
+}
+
+label:hover > .images {
+   scale: 1;
+   margin: auto;
+   width: 15em;
+   height: 15em;
+   cursor: pointer;
+   transition: 0.5s;
+}
+
+.input:active + .label > .images {
+   opacity: 0.6;
+   transition: 0.5s;
+}
+
+.input:active + .label > .title > p {
+   color: blue;
+   opacity: 0.7;
+   transition: 0.5s;
+}
+
+.input:active + .label > .title > .icon {
+   background-image: url(img/icons8-сложение-blue.png);
+   opacity: 0.7;
+   transition: 0.5s;
+}
