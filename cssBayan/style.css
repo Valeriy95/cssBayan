@@ -24,7 +24,7 @@ body {
    display: flex;
    align-items: center;
    justify-content: space-between;
-   border-top: 0.1em solid #000;
+   border-top: 0.1em solid #808080;
 }
 
 .icon {
@@ -64,36 +64,6 @@ body {
    color: black;
    transition: 0.5s;
 }
-
-/* .container:hover > label > .title > p {
-   color: black;
-   cursor: pointer;
-   transition: 0.5s;
-}
-
-.container:hover > label > .title > .icon {
-   display: block;
-   cursor: pointer;
-   transition: 0.5s;
-}
-
-label:hover {
-   cursor: pointer;
-}
-
-label:hover > .title > .icon {
-   transform: rotate(45deg);
-   transition: 0.5s;
-}
-
-label:hover > .images {
-   scale: 1;
-   margin: auto;
-   width: 15em;
-   height: 15em;
-   cursor: pointer;
-   transition: 0.5s;
-} */
 
 .input:active + .label > .images {
    opacity: 0.6;
