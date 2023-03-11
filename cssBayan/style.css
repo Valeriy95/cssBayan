@@ -1,7 +1,7 @@
 body {
-   font-size: 16px;
+   font-size: 0.5em;
    font-family: 'Montserrat', sans-serif;
-   font-weight: 700;
+   font-weight: 900;
    color:blue
 }
 
@@ -27,10 +27,10 @@ body {
 }
 
 .icon {
-   display: none;
    background-image: url(img/icons8-сложение-50.png);
-   width: 3em;
-   height: 3em;
+   width: 2em;
+   height: 2em;
+   background-size: contain;
    transition: 0.5s;
 }
 
@@ -64,7 +64,7 @@ body {
    transition: 0.5s;
 }
 
-.container:hover > label > .title > p {
+/* .container:hover > label > .title > p {
    color: black;
    cursor: pointer;
    transition: 0.5s;
@@ -92,7 +92,7 @@ label:hover > .images {
    height: 15em;
    cursor: pointer;
    transition: 0.5s;
-}
+} */
 
 .input:active + .label > .images {
    opacity: 0.6;
@@ -108,5 +108,17 @@ label:hover > .images {
 .input:active + .label > .title > .icon {
    background-image: url(img/icons8-сложение-blue.png);
    opacity: 0.7;
+   background-size: contain;
    transition: 0.5s;
+}
+
+@media screen and (min-device-width: 820px) and (max-device-width: 1919px) {
+   body {
+      font-size: 1em;
+   }
+
+   .icon {
+      width: 2.5em;
+      height: 2.5em;
+   }
 }
